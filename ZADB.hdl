@@ -1,0 +1,10 @@
+CHIP ZADB
+{
+	IN x, y, z;
+	OUT out;
+	
+	PARTS:
+	Or(a = y, b = z, out = r1);
+	Not(in = r1, out = r2);
+	And(a = x, b = r2, out = out);
+}
