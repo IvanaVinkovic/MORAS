@@ -1,0 +1,50 @@
+function mid 3
+
+    push argument 0
+    push argument 1
+    gt 
+    if-goto BAR1
+        push argument 1
+        push argument 2
+        gt
+        if-goto BAR2
+            push argument 1 
+            return
+
+
+
+label BAR1
+    push argument 0
+    push argument 2
+    gt
+    if-goto BAR3
+        push argument 0
+        return
+
+
+label BAR2
+    push argument 0
+    push argument 2
+    gt
+    if-goto BAR4
+        push argument 2
+        return
+
+
+label BAR3
+    push argument 1 
+    push argument 2
+    gt
+    if-goto BAR5
+        push argument 2
+        return
+
+
+label BAR4
+    push argument 0
+    return
+
+
+label BAR5
+    push argument 1
+    return
