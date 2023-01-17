@@ -7,11 +7,11 @@ function fib 1
         push argument 0
         push constant 2
         sub
-        call fibonacci.fibonacci 1 
+        call fib.fib 1 
         push argument 0
         push constant 1
         sub
-        call fibonacci.fibonacci 1 
+        call fib.fib 1 
         add                        
         return
 
