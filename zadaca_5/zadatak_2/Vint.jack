@@ -34,11 +34,6 @@ class Vint
         return this;
     }
 
-    method int len()
-    {
-        return capacity;
-    }
-
     method void set(int k, int v)
     {
         if ((k > capacity) | (k = capacity) | (k < 0))
@@ -51,6 +46,12 @@ class Vint
         let data[k] = v;
 
         return;
+    }
+    
+    
+    method int len()
+    {
+        return capacity;
     }
 
     method int get(int k)
