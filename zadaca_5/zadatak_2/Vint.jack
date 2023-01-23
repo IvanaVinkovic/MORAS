@@ -43,7 +43,7 @@ class Vint
     {
         if ((k > capacity) | (k = capacity) | (k < 0))
         {
-            do Output.printString("SET: Vector index out of bounds.");
+            do Output.printString("Error");
             do Output.println();
             return;
         }
