@@ -3,7 +3,7 @@ class Vint
     field int capacity;
     field Array data;
 
-    function int _pow(int a, int b)
+    function int sec_pow(int a, int b)
     {
         var int result, i;
         let result = 1;
@@ -27,7 +27,7 @@ class Vint
         }        
         else
         {
-            let capacity = Vint._pow(2, n);
+            let capacity = Vint.sec_pow(2, n);
             let data = Array.new(capacity);
         }
 
